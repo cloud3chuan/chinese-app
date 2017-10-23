@@ -1,0 +1,14 @@
+<div *ngIf="content" class="content-body">
+  <div class="pinyin">
+    {{currentItem.pinyin}}
+  </div>
+  <div class="hanzi">
+    {{currentItem.word}}
+  </div>
+  <div class="hanzi-number">
+    {{currentItem.number}}
+  </div>
+  <button [disabled]="atBeginning()" class="flip-item" (click)="toPrevious()">&lt;</button>
+  <button [disabled]="atEnd()" class="flip-item" (click)="toNext()">&gt;</button>
+
+</div>
